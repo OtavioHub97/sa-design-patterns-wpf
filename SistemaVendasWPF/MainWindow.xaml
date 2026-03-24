@@ -11,14 +11,14 @@
         <StackPanel>
             <TextBlock Text="Finalizar Pedido" FontSize="20" FontWeight="Bold" Margin="0,0,0,15"/>
             
-            <TextBlock Text="Total a Pagar:" FontSize="14"/>
-            <TextBlock x:Name="lblValorTotal" Text="R$ 1500,00" FontSize="18" FontWeight="Bold" Foreground="Green" Margin="0,0,0,15"/>
+            <TextBlock Text="Total a Pagar (R$):"/>
+            <TextBox x:Name="txtValor" Text="" Margin="0,0,0,15" Padding="4" ToolTip="Ex: 1500,00"/>
 
             <TextBlock Text="Número do Cartão:"/>
-            <TextBox x:Name="txtCartao" Text="1234-5678-9012-3456" Margin="0,0,0,10" Padding="4"/>
+            <TextBox x:Name="txtCartao" Text="" Margin="0,0,0,10" Padding="4" ToolTip="Ex: 1234-5678-9012-3456"/>
 
             <TextBlock Text="E-mail do Cliente:"/>
-            <TextBox x:Name="txtEmail" Text="cliente@teste.com" Margin="0,0,0,20" Padding="4"/>
+            <TextBox x:Name="txtEmail" Text="" Margin="0,0,0,20" Padding="4" ToolTip="Ex: cliente@email.com"/>
 
             <Button x:Name="btnFinalizar" Content="Finalizar Compra" Height="40" Background="#007ACC" Foreground="White" FontWeight="Bold" Click="btnFinalizar_Click"/>
 
